@@ -6,7 +6,7 @@ TR=param.TR;
 E1=exp(-t/T1);
 E2=exp(-t/T2);
 
-[c,n]=size(omega); % c:component (normally 3) and k is the total number of 'modes' or 'states'
+[c,n]=size(omega); % c:component (normally 3) and n is the total number of 'modes' or 'states'
 
 if c ~=3 % verification assessment 
     msg = 'Error matrix should have three components.';
