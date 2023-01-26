@@ -1,6 +1,6 @@
 function [param,seq]=set_param(parameters)
 
-% Tissues parameters
+% Tissues parameters and relevant timings
 param.T1=str2num(parameters{1});
 param.T2min=str2num(parameters{2});
 param.T2max=str2num(parameters{3});
