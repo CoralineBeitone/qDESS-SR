@@ -4,13 +4,7 @@ clear all;
 %% Load data & dependencies
 
 % 2D experiment: drift correction based on navigators + super-resolution reconstruction 
-
-addpath('./external');
-addpath('./rawdata/qDESS_290323');
-
-twix_SR_ref=mapVBVD('./rawdata/qDESS_290323/meas_MID356_qDESS_SR_ref_FID44036');
-twix_SR_0=mapVBVD('./rawdata/qDESS_290323/meas_MID357_qDESS_SR_PC0_FID44037');
-twix_SR_180=mapVBVD('./rawdata/qDESS_290323/meas_MID358_qDESS_SR_PC180_FID44038');
+load('raw_data.mat')
 
 % remove oversampling in the readout direction
 twix_SR_ref.image.flagRemoveOS=true;
@@ -18,13 +12,6 @@ twix_SR_0.image.flagRemoveOS=true;
 twix_SR_180.image.flagRemoveOS=true;
 os=2;
 
-% get dimensions
-NCol= twix_SR_ref.image.NCol/os;
-NCha=twix_SR_ref.image.NCha;
-NLin=twix_SR_ref.image.NLin;
-NRep_ref=twix_SR_ref.image.NRep;
-NRep=twix_SR_0.image.NRep;
-NSet=twix_SR_ref.image.NSet;
 
 
 % k-spaces for echo 1 PC0, PC180 and reference qDESS
