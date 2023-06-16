@@ -1,6 +1,4 @@
 # Super-resolution qDESS experiment
 
-
-This project focuses on using k-space aliasing in qDESS to achieve super-resolution in MRI. The suggested technique is demonstrated in principle via EPF simulation ( 'qDESS_EPG_simulation'), and the super-resolution reconstruction is attempted in 2D knee scan ('qDESS_SR_recon'). This project was part of the final Year 4 project in the Department of Bioengineering at Imperial College London. 
-All codes are written in MATLAB. 
+This project focuses on the use of k-space folding in qDESS to obtain super-resolution in MRI. The proposed technique is demonstrated in principle via EPG simulation (`qDESS_EPG_simulation`), and the super-resolution reconstruction is attempted in a 2D knee scan (`qDESS_SR_recon`). This project was part of the 4-year final project in the Department of Bioengineering at Imperial College London. All code written in MATLAB
 
