@@ -1,1 +1,1 @@
-# DESS
+# Super-resolution qDESS experiment
