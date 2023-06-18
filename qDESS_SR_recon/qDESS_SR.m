@@ -25,7 +25,7 @@ ks_180_echo2=squeeze(twix_SR_180.image(:,:,:,1,1,1,1,1,:,2,1));
 ks_ref_echo2=squeeze(twix_SR_ref.image(:,:,:,1,1,1,1,1,:,2,1));
 
 
-%% Navigator-based approach for drift correct in echo 1 data  
+%% Navigator-based approach for drift correction in echo 1 data  
 
 delta=10; % distance between successive navigators in the experimental space 
 K=round(NRep/delta); % Number of navigators (excluding reference navigator)
@@ -109,7 +109,7 @@ end
 
 
 
-%% Navigator-based approach for drift correct in echo 2 data  
+%% Navigator-based approach for drift correction in echo 2 data  
 
 delta=10; % distance between successive navigators in the experimental space 
 K=round(NRep/delta); % Number of navigators (excluding reference navigator)
