@@ -266,10 +266,10 @@ end
 subplot(1,2,1)
 Mpk_corr(:,:,1:ext_dim,:)=0;
 imagesc(log(abs(squeeze(Mpk_corr(:,chn_coil,:,sli))))); colormap gray; colorbar; caxis([-18, -10]); axis image off
-subtitle('After B0 correction')
+subtitle('After phase correction')
 subplot(1,2,2)
 imagesc(log(abs(squeeze(Mpk(:,chn_coil,:,sli))))); colormap gray; colorbar; axis image off;
-subtitle("Before B0 correction")
+subtitle("Before phase correction")
 
 ks_SR_echo2= Mpk_corr;
 N=size(Mpk,3);
@@ -373,10 +373,10 @@ end
 subplot(1,2,1)
 Mpk_corr(:,:,end-ext_dim:end,:)=0;
 imagesc(log(abs(squeeze(Mpk_corr(:,chn_coil,:,sli))))); colormap gray; colorbar; caxis([-18, -10]);
-subtitle('After B0 correction')
+subtitle('After phase correction')
 subplot(1,2,2)
 imagesc(log(abs(squeeze(Mpk(:,chn_coil,:,sli))))); colormap gray; colorbar; 
-subtitle("Before B0 correction")
+subtitle("Before phase correction")
 
 ks_SR_echo1= Mpk_corr;
 N=size(Mpk,3);
